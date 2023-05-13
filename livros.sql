@@ -25,3 +25,9 @@ CREATE TABLE paginas (
   idCapitulo INT ,
   FOREIGN KEY (idCapitulo) REFERENCES capitulos(id)
 );
+
+INSERT INTO livros (titulo, autor, genero, imagemCapa) VALUES ('Milagre do amanhã', 'Hal Elrod', 'Livros de autoajuda', 'capadolivromilagredoamanha.png');
+
+INSERT INTO capitulos (titulo, numCapitulo, idLivro) VALUES ('O segredo para acordar bem', 1, 1);
+
+INSERT INTO paginas (numPagina, imagem, idCapitulo) VALUES (1, 'imagemdapagina1', 1);
